@@ -10,7 +10,7 @@ Real-time sign language recognition using computer vision and deep learning.
 - [License](#license)
 
 ## 🔧 Prerequisites
-- Python 3.8+
+- Python 3.8+ I am using 3.10.11
 - Webcam for real-time recognition
 - pip (Python package manager)
 
