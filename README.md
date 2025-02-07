@@ -10,7 +10,7 @@ Real-time sign language recognition using computer vision and deep learning.
 - [License](#license)
 
 ## 🔧 Prerequisites
-- Python 3.8+ I am using 3.10.11
+- Python 3.8+ [I am using 3.10.11 But I installed 3.12.8 on my laptop and it still worked.]
 - Webcam for real-time recognition
 - pip (Python package manager)
 
@@ -45,6 +45,24 @@ The following Python packages will be automatically installed:
 - Use Ctrl+C in the terminal to stop the program
 
 > **Note:** Ensure your webcam is connected and accessible before running the program.
+
+## Folder Structure
+
+sign_language_detection/
+│
+├── data/                   # Collected keypoint sequences
+├── models/                 # Saved LSTM models
+│
+├── utils/                  # Helper functions
+│   ├── mediapipe_utils.py  # MediaPipe detection/rendering
+│   ├── data_utils.py       # Keypoint extraction
+│   └── model_utils.py      # LSTM model builder
+│
+├── collect_data.py         # Data collection script
+├── train.py                # Model training script
+├── detect.py               # Real-time detection script
+├── test_webcam.py          # Webcam test script
+└── requirements.txt        # Dependencies
 
 ## 👥 Contributing
 1. Fork the repository
