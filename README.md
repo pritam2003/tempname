@@ -1,6 +1,6 @@
 
 # ✨ Sign Language Recognition
-Real-time sign language recognition using computer vision and deep learning.
+Real-time sign language recognition using computer vision and deep learning. (Eggplant Engineers)
 
 ---
 
@@ -40,8 +40,8 @@ The following Python packages will be automatically installed:
 ## 💻 Installation
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-repo/sign-language-recognition.git
-   cd sign-language-recognition
+   git clone https://ourrepo.git
+   cd ourrepo
    ```
 2. **Create & Activate Virtual Environment**
    ```sh
@@ -64,7 +64,7 @@ The following Python packages will be automatically installed:
    ```
 2. **Run the Program**
    ```sh
-   python detect.py
+   python collect_data.py
    ```
 3. **Controls**
    - Press **'q'** to quit the webcam window
