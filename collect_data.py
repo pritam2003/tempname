@@ -7,6 +7,19 @@ from utils.data_utils import extract_keypoints
 import mediapipe as mp
 
 #TODO: From the turotial Cell 4 Setup folders for data collection before the main loop
+DATA_PATH = os.path.join('MP_Data') # path for exported data
+actions = np.array(['hello', 'thanks', 'iloveyou']) # Actions that we try to detect
+no_sequences = 30 # 30 videos worth of data
+sequence_length = 30 # videos are 30 frames long
+
+for action in actions: # Loop through each action
+    for sequence in range(no_sequences): # Loop through each sequence (video)
+        try:
+            os.makedirs(os.path.join(DATA_PATH, action, str(sequence)))
+        except:
+            pass
+
+
 
 # Main loop
 cap = cv2.VideoCapture(0)  # Try different indices if 0 doesn't work (e.g., 1, 2)
