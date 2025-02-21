@@ -6,6 +6,7 @@ from utils.mediapipe_utils import mediapipe_detection, draw_styled_landmarks, mp
 from utils.data_utils import extract_keypoints 
 import mediapipe as mp
 
+#DONE BY QUSAI
 #TODO: From the turotial Cell 4 Setup folders for data collection before the main loop
 DATA_PATH = os.path.join('MP_Data') # path for exported data
 actions = np.array(['hello', 'thanks', 'iloveyou']) # Actions that we try to detect

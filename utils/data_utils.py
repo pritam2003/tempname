@@ -1,8 +1,7 @@
+# DONE BY QUSAI
 # #TODO: Extract keypoints From tutorial Cell 3 mainly
 
 import numpy as np
-import mediapipe as mp
-import cv2
 
 
 
