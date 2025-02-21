@@ -22,7 +22,13 @@ def extract_keypoints(results):
 
    
 
+
+
+
+
+
    #The function below is better formated so you can uncomment it and comment the one above
+   #but face landmarks are not included in this function so you have to add it. You can stick with the above function as well
 
 
 # def extract_keypoints(results):

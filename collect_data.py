@@ -3,7 +3,7 @@ import cv2
 import os
 import numpy as np
 from utils.mediapipe_utils import mediapipe_detection, draw_styled_landmarks, mp_holistic
-# from utils.data_utils import extract_keypoints 
+from utils.data_utils import extract_keypoints 
 import mediapipe as mp
 
 #TODO: From the turotial Cell 4 Setup folders for data collection before the main loop
@@ -28,6 +28,9 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
 
         # Draw landmarks
         draw_styled_landmarks(image, results)
+
+        #Extract Keypoints
+        keypoints = extract_keypoints(results)
 
         # Show to screen
         cv2.imshow('OpenCV Feed', image)
